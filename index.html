@@ -209,9 +209,11 @@ fbq('track', 'PageView');
 
   <!-- Language Switcher -->
   <div class="lang-switcher">
-    <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('es')">ES</button>
-    <button class="lang-btn" onclick="setLang('ar')">AR</button>
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('es')">ES</button>
+  <button class="lang-btn" onclick="setLang('fr')">FR</button>
+  <button class="lang-btn" onclick="setLang('ar')">AR</button>
+</div>
   </div>
 
   <!-- HERO -->
@@ -346,7 +348,7 @@ fbq('track', 'PageView');
     <p>Telegram: <a href="https://t.me/+tJa2DnBcetA0NTg5" target="_blank" rel="noopener">📈 Secret - Gold EA</a></p>
   </footer>
 
-  <script>
+<script>
   // ─── TRANSLATIONS ───────────────────────────────────────────────
   const T = {
     en: {
@@ -422,6 +424,42 @@ fbq('track', 'PageView');
       disclaimer:'⚠️ <strong>Advertencia de Riesgo:</strong> Operar en Forex y mercados financieros conlleva un riesgo significativo de pérdida de capital. Los resultados pasados no garantizan resultados futuros. Nunca opere con dinero que no pueda permitirse perder. Este canal tiene carácter educativo e informativo.',
       footerCopy:'© 2026 Secret EA — Todos los derechos reservados.'
     },
+    fr: {
+      dir: 'ltr',
+      htmlLang: 'fr',
+      title: 'Secret EA — Trading Forex Automatisé',
+      heroSpan: 'Pilote Automatique',
+      heroSub: 'Expert Advisor pour MT4 & MT5 avec stratégie de couverture intelligente. Automatisez vos trades et accédez aux signaux, au copy trading et bien plus.',
+      stat1:'Compatible', stat2:'Compatible', stat3:'Automatisé', stat4:'Accès VIP Inclus',
+      btnHero:'Telegram : Rejoindre le Groupe',
+      ctaNote:'Entrée gratuite · Contenu exclusif · Résultats vérifiés',
+      featLabel:'Pourquoi nous choisir',
+      featTitle:'Le Robot qui Travaille',
+      featTitleSpan:'pour Vous',
+      featDesc:'Technologie d\'automatisation professionnelle accessible à chaque trader.',
+      f1t:'100% Automatisé', f1d:'Le robot trade 24h par jour sans surveillance nécessaire. Configurez-le une fois et laissez-le travailler pour vous.',
+      f2t:'Contrôle des Risques', f2d:'Stratégie de couverture intelligente avec des préréglages prêts à l\'emploi pour tous les profils, du conservateur à l\'agressif.',
+      f3t:'Résultats Vérifiés', f3d:'Performance publiée et auditée sur Myfxbook. Transparence totale, aucune surprise.',
+      f4t:'MT4 & MT5', f4d:'Compatible avec les deux plateformes les plus utilisées au monde. Installation facile avec support inclus.',
+      bonusLabel:'Inclus dans votre plan',
+      bonusTitle:'Tout ce que Vous',
+      bonusTitleSpan:'Recevez',
+      bonusDesc:'Lorsque vous rejoignez le canal, vous obtenez un accès immédiat à des avantages exclusifs qui boostent vos résultats.',
+      b1Badge:'Gratuit', b1Title:'Salle de Signaux', b1Desc:'Recevez des alertes d\'entrée en temps réel directement dans le canal VIP.',
+      b1_1:'Signaux XAU/USD et paires majeures', b1_2:'Entrée, stop loss et take profit définis',
+      b1_3:'Analyse du contexte de marché avec chaque signal', b1_4:'Envoyés directement via Telegram',
+      b2Badge:'Inclus', b2Title:'Copy Trade', b2Desc:'Copiez les trades automatiquement sans configuration manuelle nécessaire.',
+      b2_1:'Réplication automatique des trades', b2_2:'Fonctionne avec MT4 et MT5',
+      b2_3:'Parfait pour les débutants', b2_4:'Aucune analyse personnelle requise',
+      b3Badge:'Exclusif', b3Title:'Bonus VIP', b3Desc:'Les membres du canal ont accès à du contenu et des avantages indisponibles ailleurs.',
+      b3_1:'Accès complet à l\'Expert Advisor', b3_2:'Préréglages configurés prêts à l\'emploi',
+      b3_3:'Mises à jour du robot incluses', b3_4:'Support direct de l\'équipe',
+      bottomH2:'Prêt à', bottomSpan:'Commencer ?',
+      bottomP:'Rejoignez le canal maintenant et découvrez comment automatiser vos trades avec Secret EA.',
+      btnBottom:'Telegram : Rejoindre le Groupe',
+      disclaimer:'⚠️ <strong>Avertissement de Risque :</strong> Le trading sur le Forex et les marchés financiers comporte un risque important de perte en capital. Les résultats passés ne garantissent pas les résultats futurs. Ne tradez jamais avec de l\'argent que vous ne pouvez pas vous permettre de perdre. Ce canal est à but éducatif et informatif uniquement.',
+      footerCopy:'© 2026 Secret EA — Tous droits réservés.'
+    },
     ar: {
       dir: 'rtl',
       htmlLang: 'ar',
@@ -467,7 +505,6 @@ fbq('track', 'PageView');
     document.documentElement.dir = t.dir;
     document.title = t.title;
     document.body.classList.toggle('rtl', t.dir === 'rtl');
-
     // Hero
     document.getElementById('hero-span').textContent = t.heroSpan;
     document.getElementById('hero-sub').textContent = t.heroSub;
@@ -477,7 +514,6 @@ fbq('track', 'PageView');
     document.getElementById('stat4').textContent = t.stat4;
     document.getElementById('btn-hero').textContent = t.btnHero;
     document.getElementById('cta-note').textContent = t.ctaNote;
-
     // Features
     document.getElementById('feat-label').textContent = t.featLabel;
     document.getElementById('feat-title').childNodes[0].textContent = t.featTitle + ' ';
@@ -491,7 +527,6 @@ fbq('track', 'PageView');
     document.getElementById('f3d').textContent = t.f3d;
     document.getElementById('f4t').textContent = t.f4t;
     document.getElementById('f4d').textContent = t.f4d;
-
     // Bonus
     document.getElementById('bonus-label').textContent = t.bonusLabel;
     document.getElementById('bonus-title').childNodes[0].textContent = t.bonusTitle + ' ';
@@ -518,7 +553,6 @@ fbq('track', 'PageView');
     document.getElementById('b3-2').textContent = t.b3_2;
     document.getElementById('b3-3').textContent = t.b3_3;
     document.getElementById('b3-4').textContent = t.b3_4;
-
     // Bottom CTA
     document.getElementById('bottom-h2').childNodes[0].textContent = t.bottomH2 + ' ';
     document.getElementById('bottom-span').textContent = t.bottomSpan;
@@ -526,13 +560,11 @@ fbq('track', 'PageView');
     document.getElementById('btn-bottom').textContent = t.btnBottom;
     document.getElementById('disclaimer').innerHTML = t.disclaimer;
     document.getElementById('footer-copy').textContent = t.footerCopy;
-
     // Update active button
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.lang-btn').forEach(b => {
       if (b.textContent === lang.toUpperCase()) b.classList.add('active');
     });
-
     // Save preference
     try { localStorage.setItem('sea_lang', lang); } catch(e){}
   }
@@ -544,11 +576,9 @@ fbq('track', 'PageView');
       const saved = localStorage.getItem('sea_lang');
       if (saved && T[saved]) return saved;
     } catch(e){}
-
-    // 2. Check URL param ?lang=es
+    // 2. Check URL param ?lang=fr
     const urlParam = new URLSearchParams(window.location.search).get('lang');
     if (urlParam && T[urlParam]) return urlParam;
-
     // 3. Detect from browser/system language
     const browserLangs = navigator.languages || [navigator.language || 'en'];
     for (const bl of browserLangs) {
@@ -557,10 +587,11 @@ fbq('track', 'PageView');
       if (['ar','fa','he','ur'].includes(code)) return 'ar';
       // Spanish countries
       if (['es'].includes(code)) return 'es';
+      // French countries
+      if (['fr'].includes(code)) return 'fr';
       // English (default)
       if (['en'].includes(code)) return 'en';
     }
-
     // 4. Geo-based detection via timezone
     try {
       const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
@@ -574,10 +605,20 @@ fbq('track', 'PageView');
         'America/Costa_Rica','America/Guatemala','America/El_Salvador','America/Tegucigalpa',
         'America/Managua','America/Havana','America/Santo_Domingo','America/Puerto_Rico',
         'Europe/Madrid','Atlantic/Canary'];
+      const frTZ = ['Europe/Paris','Europe/Brussels','Europe/Luxembourg','Europe/Zurich',
+        'Europe/Monaco','Indian/Reunion','America/Cayenne','America/Fort_de_France',
+        'America/Pointe_a_Pitre','America/Miquelon','Africa/Casablanca','Africa/Tunis',
+        'Africa/Algiers','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti',
+        'America/Montreal','America/Toronto','America/Vancouver','America/Edmonton',
+        'America/Winnipeg','America/Halifax','America/St_Johns','Africa/Dakar',
+        'Africa/Abidjan','Africa/Bamako','Africa/Cotonou','Africa/Ouagadougou',
+        'Africa/Niamey','Africa/Lome','Africa/Libreville','Africa/Ndjamena',
+        'Africa/Bangui','Africa/Brazzaville','Africa/Kinshasa','Africa/Douala',
+        'Africa/Malabo','Africa/Porto-Novo','Antarctica/DumontDUrville'];
       if (arTZ.some(z => tz.startsWith(z.split('/')[0]) && tz === z)) return 'ar';
       if (esTZ.includes(tz)) return 'es';
+      if (frTZ.includes(tz)) return 'fr';
     } catch(e){}
-
     return 'en';
   }
 
@@ -585,7 +626,7 @@ fbq('track', 'PageView');
   window.addEventListener('DOMContentLoaded', function() {
     setLang(detectLang());
   });
-  </script>
+</script>
 
 </body>
 </html>
